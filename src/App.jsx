@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Styles/App.css';
-import './Styles/Logo.css';
-import Mostrar from './Components/SpinnerAndLogo.jsx';
+import Spinner from './Components/Spinner.jsx';
+import Logo from './Components/Logo.jsx';
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -15,13 +15,13 @@ function App() {
 
   return (
     <div className="App">
-      <Mostrar loading={loading} />
-      {!loading && (
-
+      {isLoading && <Spinner loading={isLoading} />}
+      <Logo loading={isLoading} />
+      
+      {!isLoading && (
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        
       )}
     </div>
   );

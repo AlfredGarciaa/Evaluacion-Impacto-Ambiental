@@ -1,6 +1,13 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .custom-loading-text {
   color: #ffffff;
-  font-size: 24px; 
+  font-size: 24px;
   font-family: 'Lobster', cursive;
+  text-align: center;
 }
-  
