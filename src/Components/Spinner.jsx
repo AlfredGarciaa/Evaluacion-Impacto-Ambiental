@@ -4,7 +4,7 @@ import '../Styles/Spinner.css';
 
 const Spinner = ({ loading }) => (
   <div className="spinner-container">
-    {loading && <HashLoader size={120} color="#36d7b7" className="custom-spinner" />}
+    {loading && <HashLoader size={100} color="#37B1FC" className="custom-spinner" />}
   </div>
 );
 

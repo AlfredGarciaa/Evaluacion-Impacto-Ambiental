@@ -1,3 +1,4 @@
+// App.js
 import React, { useState, useEffect } from 'react';
 import './Styles/App.css';
 import Spinner from './Components/Spinner.jsx';
@@ -18,10 +19,15 @@ function App() {
       {isLoading && <Spinner loading={isLoading} />}
       <Logo loading={isLoading} />
       
-      {!isLoading && (
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      {!isLoading ? (
+        <>
+          <Logo />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+        </>
+      ) : (
+        <p className="open-source-text">Open Source</p>
       )}
     </div>
   );
