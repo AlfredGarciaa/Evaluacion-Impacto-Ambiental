@@ -1,8 +1,8 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import './Styles/App.css';
 import Spinner from './Components/Spinner.jsx';
 import Logo from './Components/Logo.jsx';
+import Marca from './Components/Marca.jsx';
 
 function App() {
   const [isLoading, setLoading] = useState(false);
@@ -17,10 +17,11 @@ function App() {
   return (
     <div className="App">
       {isLoading && <Spinner loading={isLoading} />}
+      <Marca loading={isLoading} />
       <Logo loading={isLoading} />
       
       {!isLoading ? (
-        <>
+        <> 
           <Logo />
           <p>
             Edit <code>src/App.js</code> and save to reload.
