@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+/* CARRUSEL DE IMAGENES */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -16,6 +18,8 @@ main {
 	margin: 0px auto;
 	overflow: hidden;
 }
+
+/* BARRA DE BOTONES */
 
 .button-bar {
 	display: flex;
@@ -62,102 +66,96 @@ main {
 }
   
 .button-bar a:hover {
-	padding-right: 50px; /* Aumentamos el padding derecho al hacer hover */
-	background-color: #e67500;
+	padding-right: 50px;
+	background-color: transparenonent;
 }
   
 .button-bar a:hover::after {
 	border-width: 8px 10px 8px 0;
 }
-  
-/* Home.css */
-/* Estilos para la barra de botones */
-/* ...estilos anteriores... */
+
+/* CALENDARIO */
 
 .calendar-container {
 	display: flex;
-	justify-content: flex-start; /* Alinear el calendario a la izquierda */
-	margin-top: 20px; /* Espacio entre la barra de botones y el calendario */
-  }
+	justify-content: flex-start;
+	margin-top: 20px;
+}
   
-  .calendar-box {
-	border: 1px solid #ccc; /* Borde del cuadro */
-	border-radius: 10px; /* Bordes redondeados del cuadro */
-	background-color: #f9f9f9; /* Color de fondo del cuadro */
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
-	padding: 20px 10px; /* Espaciado interno del cuadro */
-	font-family: Arial, sans-serif; /* Tipo de fuente para el calendario */
-	color: #333; /* Color del texto del calendario */
-  }
+.calendar-box {
+	border: 1px solid #ccc;
+	border-radius: 10px; 
+	background-color: #f9f9f9; 
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px 10px;
+	font-family: Arial, sans-serif; 
+	color: #333; 
+}
 
-
-  /* Estilos para el calendario */
-  .react-calendar {
-	/* ...otros estilos... */
-	max-width: 300px; /* Establecer un ancho máximo para el calendario */
-	margin: 0 auto; /* Centrar el calendario dentro del contenedor */
-  }
+.react-calendar {
+	max-width: 300px; 
+	margin: 0 auto; 
+}
   
   
-  .react-calendar__navigation {
-	background-color: #e67500; /* Color de fondo del encabezado de navegación del calendario */
-	color: #fff; /* Color del texto del encabezado de navegación del calendario */
-	font-weight: bold; /* Texto en negrita para el encabezado de navegación */
-	font-size: 16px; /* Tamaño de fuente para el encabezado de navegación */
-	border-radius: 5px; /* Bordes redondeados para el encabezado de navegación */
-	padding: 5px 10px; /* Espaciado interno del encabezado de navegación */
+.react-calendar__navigation {
+	background-color: #219ada; 
+	color: #fff; 
+	font-weight: bold; 
+	font-size: 16px;
+	border-radius: 5px; 
+	padding: 5px 10px;
 	display: flex;
-	justify-content: space-between; /* Alinear los botones de navegación a la izquierda y a la derecha */
-  }
+	justify-content: space-between;
+}
   
-  .react-calendar__navigation button {
-	background: none; /* Quitar el fondo del botón de navegación */
-	border: none; /* Quitar el borde del botón de navegación */
-	cursor: pointer; /* Cambiar el cursor al pasar por encima del botón de navegación */
-  }
+.react-calendar__navigation button {
+	padding: 5px 10px;
+	background: none; 
+	border: none; 
+	cursor: pointer; 
+}
   
-  .react-calendar__navigation button:enabled:hover {
-	background-color: #d16000; /* Color de fondo cuando se hace hover en el botón de navegación */
-  }
+.react-calendar__navigation button:enabled:hover {
+	background-color: #e1dcdc;
+}
   
-  .react-calendar__month-view__days {
-	/* ...otros estilos... */
-	display: grid; /* Mostrar los días del calendario en una cuadrícula */
-	grid-template-columns: repeat(7, 1fr); /* Crear 7 columnas para los días de la semana */
-  }
+.react-calendar__month-view__days {
+	display: grid; 
+	grid-template-columns: repeat(7, 1fr); 
+}
 
-  .react-calendar__month-view__days > *:nth-of-type(7n+7) {
-	color: red; /* Color rojo para los días domingos */
-	font-weight: bold; /* Texto en negrita para los días domingos */
-  }
+.react-calendar__month-view__days > *:nth-of-type(7n+7) {
+	color: red; 
+	font-weight: bold; 
+}
   
-  .react-calendar__tile--active {
-	background-color: #e67500; /* Color de fondo de la celda activa del calendario */
-	color: #fff; /* Color del texto de la celda activa del calendario */
-	font-weight: bold; /* Texto en negrita para la celda activa del calendario */
-  }
+.react-calendar__tile--active {
+	background-color: #e67500; 
+	color: #fff; 
+	font-weight: bold; 
+}
   
-  .react-calendar__tile--now {
-	background-color: #ff8000; /* Color de fondo de la celda que muestra la fecha actual */
-	color: #fff; /* Color del texto de la celda que muestra la fecha actual */
-	font-weight: bold; /* Texto en negrita para la celda que muestra la fecha actual */
-  }
+.react-calendar__tile--now {
+	background-color: #27b522;
+	color: #fff;
+	font-weight: bold; 
+}
   
-  .react-calendar__tile--hasActive:enabled:hover,
-  .react-calendar__tile--active:enabled:hover,
-  .react-calendar__tile--now:enabled:hover,
-  .react-calendar__tile--rangeStart:enabled:hover,
-  .react-calendar__tile--rangeEnd:enabled:hover {
-	background-color: #d16000; /* Color de fondo cuando se hace hover en las celdas activas o en la fecha actual */
-	color: #fff; /* Color del texto cuando se hace hover en las celdas activas o en la fecha actual */
-	font-weight: bold; /* Texto en negrita cuando se hace hover en las celdas activas o en la fecha actual */
-  }
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--rangeStart:enabled:hover,
+.react-calendar__tile--rangeEnd:enabled:hover {
+	background-color: #d16000; 
+	color: #fff; 
+	font-weight: bold; 
+}
   
-  .react-calendar__tile--rangeStart,
-  .react-calendar__tile--rangeEnd {
-	background-color: #ff8000; /* Color de fondo de las celdas que indican el inicio y el final de un rango seleccionado */
-	color: #fff; /* Color del texto de las celdas que indican el inicio y el final de un rango seleccionado */
-	font-weight: bold; /* Texto en negrita para las celdas que indican el inicio y el final de un rango seleccionado */
-  }
-  
-  
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+	background-color: #d16000;
+	color: #fff;
+	font-weight: bold;
+}
+    
