@@ -14,7 +14,7 @@ const Slideshow = ({
   const intervaloSlideshow = useRef(null);
 
   const siguiente = useCallback(() => {
-    if (slideshow.current.children.length > 0) {
+    if (slideshow.current && slideshow.current.children.length > 0) {
       const primerElemento = slideshow.current.children[0];
       slideshow.current.style.transition = `${velocidad}ms ease-out all`;
       const tamañoSlide = primerElemento.offsetWidth;
