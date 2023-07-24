@@ -6,6 +6,7 @@ import image1 from '../Assets/Home 1.png';
 import image2 from '../Assets/Home 2.png';
 import image3 from '../Assets/Home 3.png';
 import image4 from '../Assets/Home 4.png';
+import Calendar from 'react-calendar';
 
 const Home = () => {
   const slides = [
@@ -70,6 +71,12 @@ const Home = () => {
             <br />
           </React.Fragment>
         ))}
+      </div>
+
+      <div className="calendar-container">
+        <div className="calendar-box">
+          <Calendar />
+        </div>
       </div>
     </div>
   );
