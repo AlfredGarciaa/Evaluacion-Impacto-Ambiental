@@ -7,6 +7,7 @@ import image2 from '../Assets/Home 2.png';
 import image3 from '../Assets/Home 3.png';
 import image4 from '../Assets/Home 4.png';
 import Calendar from 'react-calendar';
+import Language from '../Components/Language.jsx';
 
 const Home = () => {
   const slides = [
@@ -41,14 +42,15 @@ const Home = () => {
   ];
 
   const routes = [
-    { path: '/home', label: 'Home' },
-    { path: '/information', label: 'Information' },
-    { path: '/context', label: 'Context' },
-    { path: '/about', label: 'About' },
+    { path: '/home', label: 'Home', icon: <i className="fas fa-home button-icon"></i> },
+    { path: '/information', label: 'Information', icon: <i class="fas fa-info-circle"></i> },
+    { path: '/context', label: 'Context', icon: <i class="fas fa-book"></i> },
+    { path: '/about', label: 'About', icon: <i class="fas fa-users"></i> },
   ];
 
   return (
     <div>
+
       <main>
         <Slideshow controles={true} autoplay={true} velocidad="3000" intervalo="5000">
           {slides.map((slide, index) => (
@@ -67,7 +69,10 @@ const Home = () => {
       <div className="button-bar">
         {routes.map((route, index) => (
           <React.Fragment key={index}>
-            <Link to={route.path}>{route.label}</Link>
+            <Link to={route.path}>
+              {route.label}
+              {route.icon}  
+            </Link> 
             <br />
           </React.Fragment>
         ))}
@@ -78,6 +83,11 @@ const Home = () => {
           <Calendar />
         </div>
       </div>
+
+      <div className="home-container">
+          <Language />
+      </div>
+
     </div>
   );
 };
