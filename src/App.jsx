@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Styles/App.css';
 import Spinner from './Components/Spinner.jsx';
-import Logo from './Components/Logo.jsx';
 import Marca from './Components/Marca.jsx';
+import Logo from './Components/Logo.jsx';
+import { Link } from 'react-router-dom';
 
 function App() {
-  const [isLoading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 8000);
@@ -19,14 +19,9 @@ function App() {
       {isLoading && <Spinner loading={isLoading} />}
       <Marca loading={isLoading} />
       <Logo loading={isLoading} />
-      
+
       {!isLoading ? (
-        <> 
-          <Logo />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        </>
+        <Link to="/home">Go to Home</Link>
       ) : (
         <p className="open-source-text">Open Source</p>
       )}
