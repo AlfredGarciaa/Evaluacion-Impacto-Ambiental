@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mynerve&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
 	padding: 0;
@@ -11,7 +11,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
-.header {
+main {
 	max-width: 1000px;
 	margin: 0px auto;
 	overflow: hidden;
