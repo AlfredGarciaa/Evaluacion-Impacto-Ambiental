@@ -40,6 +40,7 @@ const Home = () => {
   ];
 
   const routes = [
+    { path: '/home', label: 'Home' },
     { path: '/information', label: 'Information' },
     { path: '/context', label: 'Context' },
     { path: '/about', label: 'About' },
@@ -62,12 +63,14 @@ const Home = () => {
         </Slideshow>
       </main>
 
-      {routes.map((route, index) => (
-        <React.Fragment key={index}>
-          <Link to={route.path}>Go to {route.label}</Link>
-          <br />
-        </React.Fragment>
-      ))}
+      <div className="button-bar">
+        {routes.map((route, index) => (
+          <React.Fragment key={index}>
+            <Link to={route.path}>{route.label}</Link>
+            <br />
+          </React.Fragment>
+        ))}
+      </div>
     </div>
   );
 };

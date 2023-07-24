@@ -16,3 +16,57 @@ main {
 	margin: 0px auto;
 	overflow: hidden;
 }
+
+.button-bar {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 25%;
+	left: 20px;
+	transform: translateY(-50%);
+}
+  
+.button-bar a {
+	display: block;
+	position: relative;
+	margin-bottom: 10px;
+	padding: 10px 70px 10px 20px;
+	background-color: #cbe5ef;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: background-color 0.3s ease;
+}
+  
+.button-bar a:not(:first-child)::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 0 8px 10px;
+	border-color: transparent transparent transparent #000000;
+}
+  
+.button-bar a:first-child {
+	background-color: #ff8000;
+	color: #ffffff;
+}
+  
+.button-bar a:first-child::after {
+	display: none;
+}
+  
+.button-bar a:hover {
+	padding-right: 50px; /* Aumentamos el padding derecho al hacer hover */
+	background-color: #e67500;
+}
+  
+.button-bar a:hover::after {
+	border-width: 8px 10px 8px 0;
+}
+  
