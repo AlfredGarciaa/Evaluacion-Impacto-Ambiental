@@ -17,7 +17,7 @@ const Language = () => {
   return (
     <div className="language-container">
       <label className="language-label" htmlFor="language-select">
-        <u>Seleccione el idioma:</u> <span>Icono Aquí</span>
+        <u>Seleccione el idioma:</u> <i className="fas fa-globe button-icon"></i>
       </label>
       <select id="language-select" value={selectedLanguage} onChange={handleLanguageChange}>
         {languages.map((language) => (
