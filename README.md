@@ -1,6 +1,6 @@
 # Metodología Scrum para Desarrollo de Proyectos con Tecnologías JavaScript, React, Firebase, Visual Studio Code, Git, Azure y Cypress "PARA EL PROYECTO"
 
-![Scrum](../my-app/src/Assets/Marca.png)
+![Scrum](https://gerens.pe/blog/wp-content/uploads/2016/08/impacto-ambiental-mineria.jpg)
 
 Este README proporciona una visión general de cómo se utiliza la metodología Scrum para el desarrollo de proyectos basados en tecnologías JavaScript, React, Firebase, Visual Studio Code, Git, Azure y Cypress. Scrum es un marco de trabajo ágil ampliamente adoptado para gestionar proyectos de software y desarrollo de productos.
 
