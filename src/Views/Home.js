@@ -7,6 +7,8 @@ import image2 from '../Assets/Home 2.png';
 import image3 from '../Assets/Home 3.png';
 import image4 from '../Assets/Home 4.png';
 import Calendar from 'react-calendar';
+import { MapContainer, TileLayer } from 'react-leaflet';
+import '../Styles/leaflet.css';
 import Language from '../Components/Language.jsx';
 
 const Home = () => {
@@ -48,6 +50,9 @@ const Home = () => {
     { path: '/about', label: 'About', icon: <i class="fas fa-users"></i> },
   ];
 
+  const mapCenter = [51.505, -0.09]; // Coordenadas del centro del mapa (Latitud, Longitud)
+  const mapZoom = 13; // Nivel de zoom inicial del mapa
+
   return (
     <div>
 
@@ -82,6 +87,17 @@ const Home = () => {
         <div className="calendar-box">
           <Calendar />
         </div>
+      </div>
+
+      {/* Agregar el mapa con react-leaflet */}
+      <div className="map-container">
+        <MapContainer center={mapCenter} zoom={mapZoom} className="leaflet-map">
+          {/* Agregar una capa de mapas, puedes elegir el proveedor que prefieras */}
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          {/* Puedes agregar marcadores, polígonos, etc., según tus necesidades */}
+        </MapContainer>
       </div>
 
       <div className="home-container">

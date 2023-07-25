@@ -4,6 +4,7 @@ import Spinner from './Components/Spinner.jsx';
 import Marca from './Components/Marca.jsx';
 import Logo from './Components/Logo.jsx';
 import { Link } from 'react-router-dom';
+import Login from './Views/Login.js';
 
 function App() {
   const [isLoading, setLoading] = useState(true);
@@ -21,6 +22,7 @@ function App() {
       <Logo loading={isLoading} />
 
       {!isLoading ? (
+        <Login />,
         <Link to="/home">Go to Home</Link>
       ) : (
         <p className="open-source-text">Open Source</p>
