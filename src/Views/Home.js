@@ -50,8 +50,8 @@ const Home = () => {
     { path: '/about', label: 'About', icon: <i class="fas fa-users"></i> },
   ];
 
-  const mapCenter = [51.505, -0.09]; // Coordenadas del centro del mapa (Latitud, Longitud)
-  const mapZoom = 13; // Nivel de zoom inicial del mapa
+  const mapCenter = [51.505, -0.09];
+  const mapZoom = 13;
 
   return (
     <div>
@@ -89,14 +89,11 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Agregar el mapa con react-leaflet */}
       <div className="map-container">
         <MapContainer center={mapCenter} zoom={mapZoom} className="leaflet-map">
-          {/* Agregar una capa de mapas, puedes elegir el proveedor que prefieras */}
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          {/* Puedes agregar marcadores, polígonos, etc., según tus necesidades */}
         </MapContainer>
       </div>
 

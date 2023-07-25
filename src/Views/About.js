@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import image from '../Assets/Marca.png';
 import '../Styles/About.css';
 import '../Styles/Icons.css';
+import '../Styles/Text.css';
 
 const About = () => {
   const location = useLocation();
@@ -48,9 +49,52 @@ const About = () => {
         })}
       </div>
 
+      <div class="body2">
+        <div class="container">
+          <div class="objetivos-container">
+              <h2 style={{ fontSize: '20px', fontFamily: 'Pacifico, cursive', color: 'blue' }} class="subrayado">Objetivo</h2>
+              <br />
+              <ul style={{ fontSize: '16px', fontFamily: 'Georgia, serif'}} class="justify-text">
+                Desarrollar una aplicación web de código abierto para la estimación de EIA aplicando la matriz de leopold.
+                <br /> <br />
+                <li>✔ Implementar la matriz de leopold para proveer información de los efectos ambientales en proyectos hidroeléctricos. </li>
+                <br />
+                <li>✔ Facilitar la visualización de las alteraciones de los factores y elementos ambientales según la geolocalización de los proyectos. </li>
+                <br />
+                <li>✔ Realizar una identificación de elementos y acciones de las causas de impacto ambiental. </li>
+                <br />
+                <li>✔ Realizar un código sin protección legal para la EIA. </li>
+              </ul>
+          </div>
+          <div className="aporte-container">
+              <h2 style={{ fontSize: '21px', fontFamily: 'Pacifico, cursive', color: 'green' }} class="subrayado">Aporte</h2>
+              <br />
+              <ul style={{ fontSize: '15px', fontFamily: 'Georgia, serif'}} class=" justify-text">
+              Contribuir a una aplicación de código abierto puede ser provechoso tanto para los colaboradores como para la comunidad en general; es de alguna forma gratificante de participar en la comunidad de desarrolladores, mejorar tus habilidades y fomentar el acceso a software libre y de alta calidad para todos.
+              <br /> <br />
+                ★	Contribuir al bien común.
+                <br />
+                ★	Aprendizaje y mejora de habilidades.
+                <br />
+                ★	Desarrollo de un portafolio.
+                <br />
+                ★ Colaboración y networking.
+                <br />
+                ★	Mejorar el software que usas.
+                <br />
+                ★	Recibir reconocimiento y gratitud.
+                <br />
+                ★	Participación en comunidades activas.
+                <br />
+                ★	Mejora de tu reputación profesional.
+              </ul>
+          </div>
+        </div>
+      </div>
+
       <div className="body1">
         <div className="main1">
-          <a href={githubRepoURL} target="_blank" rel="noopener noreferrer" className="icon">
+          <a href={githubRepoURL} target="_blank" rel="noopener noreferrer" className="icon icon-git">
             <i className="bx bxl-github"></i>
           </a>
 

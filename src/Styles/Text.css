@@ -1,0 +1,40 @@
+.body2 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1000px;
+}
+
+.objetivos-container,
+.aporte-container {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+}
+
+.objetivos-container h2,
+.aporte-container h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .objetivos-container,
+    .aporte-container {
+        width: 100%;
+    }
+}

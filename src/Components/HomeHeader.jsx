@@ -133,7 +133,6 @@ const Controles = styled.div`
   height: 100%;
   pointer-events: none;
 `;
-
 const Boton = styled.button`
   pointer-events: all;
   background: none;
