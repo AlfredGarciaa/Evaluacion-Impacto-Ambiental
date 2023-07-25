@@ -1,20 +1,59 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import image from '../Assets/Marca.png';
+import '../Styles/About.css';
+import '../Styles/Icons.css';
 
 const About = () => {
-  const links = [
-    { path: '/home', label: 'Home' },
+  const location = useLocation();
+
+  const routes = [
+    { path: '/home', label: 'Home', icon: <i className="fas fa-home button-icon"></i> },
+    { path: '/information', label: 'Information', icon: <i className="fas fa-info-circle"></i> },
+    { path: '/context', label: 'Context', icon: <i className="fas fa-book"></i> },
+    { path: '/about', label: 'About', icon: <i className="fas fa-users"></i> },
   ];
 
   return (
     <div>
-      <h1>Welcome to the About!</h1>
-      {links.map((link) => (
-        <React.Fragment key={link.path}>
-          <Link to={link.path}>Go back to {link.label}</Link>
+
+      <div className="image-container">
+        <img src={image} alt="Marca" className="logo" />
+        <div className="image-text">
+          <strong>" La tierra proporciona lo suficiente para satisfacer las necesidades de cada hombre, pero no la codicia de cada hombre. "</strong>
           <br />
-        </React.Fragment>
-      ))}
+          - Mahatma Gandhi
+        </div>
+      </div>  
+
+      <div className="button-bar">
+        {routes.map((route, index) => {
+          const isActive = location.pathname === route.path;
+          const buttonStyle = {
+            backgroundColor: isActive ? '#ff8000' : '#cbe5ef',
+            color: isActive ? '#ffffff' : '#000000',
+          };
+
+          return (
+            <React.Fragment key={index}>
+              <Link to={route.path} style={buttonStyle}>
+                {route.label}
+                {route.icon}
+              </Link>
+              <br />
+            </React.Fragment>
+          );
+        })}
+      </div>
+
+      <div className="body1">
+        <div className="main1">
+          <h1>
+            Hola
+          </h1>
+        </div>
+      </div>
+
     </div>
   );
 };
