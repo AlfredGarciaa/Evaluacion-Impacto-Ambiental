@@ -1,0 +1,11 @@
+/* Agrega estilos para el contenedor del mapa fijo */
+.map-fixed-container {
+    position: fixed;
+    top: 80px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 20px; /* Ajusta la distancia desde la izquierda según tus necesidades */
+    width: 300px; /* Ajusta el ancho del contenedor del mapa según tus necesidades */
+    height: 300px; /* Ajusta la altura del contenedor del mapa según tus necesidades */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra para resaltar el contenedor */
+    z-index: 1000; /* Ajusta la propiedad z-index para que esté por encima de otros elementos */
+  }
+  

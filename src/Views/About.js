@@ -14,6 +14,8 @@ const About = () => {
     { path: '/about', label: 'About', icon: <i className="fas fa-users"></i> },
   ];
 
+  const githubRepoURL = 'https://github.com/AlfredGarciaa/Evaluacion-Impacto-Ambiental.git';
+
   return (
     <div>
 
@@ -48,12 +50,23 @@ const About = () => {
 
       <div className="body1">
         <div className="main1">
-          <h1>
-            Hola
-          </h1>
+          <a href={githubRepoURL} target="_blank" rel="noopener noreferrer" className="icon">
+            <i className="bx bxl-github"></i>
+          </a>
+
+          <div className="icon">
+            <i className="bx bxl-facebook-circle"></i>
+          </div>
+
+          <div className="icon">
+            <i className="bx bxl-whatsapp"></i>
+          </div>
+
+          <div className="icon">
+            <i className="bx bxl-youtube"></i>
+          </div>
         </div>
       </div>
-
     </div>
   );
 };
