@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #EDE9E7;
+	font-family: 'Poppins', sans-serif;
+}
+
+main {
+	max-width: 1000px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+/* BARRA DE BOTONES */
+
+.button-bar {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 25%;
+	left: 20px;
+	transform: translateY(-50%);
+}
+  
+.button-bar a {
+	display: block;
+	position: relative;
+	margin-bottom: 10px;
+	padding: 10px 40px 10px 20px;
+	background-color: #cbe5ef;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: background-color 0.3s ease;
+	box-shadow: 0px 5px 0px #373c3c;
+}
+  
+.button-bar a:first-child {
+	background-color: #ff8000;
+	color: #ffffff;
+}
+  
+.button-bar a:hover {
+	padding-right: 50px;
+}
+  
+.button-bar a:hover::after {
+	border-width: 8px 10px 8px 0;
+}
