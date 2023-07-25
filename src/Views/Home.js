@@ -7,9 +7,8 @@ import image2 from '../Assets/Home 2.png';
 import image3 from '../Assets/Home 3.png';
 import image4 from '../Assets/Home 4.png';
 import Calendar from 'react-calendar';
-import { MapContainer, TileLayer } from 'react-leaflet';
-import '../Styles/leaflet.css';
 import Language from '../Components/Language.jsx';
+import crearMatrizLeopold from './Matriz.js';
 
 const Home = () => {
   const slides = [
@@ -89,16 +88,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="map-container">
-        <MapContainer center={mapCenter} zoom={mapZoom} className="leaflet-map">
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-        </MapContainer>
-      </div>
-
       <div className="home-container">
           <Language />
+      </div>
+
+      <div>
+        <crearMatrizLeopold />
       </div>
 
     </div>
