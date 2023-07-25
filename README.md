@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Metodología Scrum para Desarrollo de Proyectos con Tecnologías JavaScript, React, Firebase, Visual Studio Code, Git, Azure y Cypress "PARA EL PROYECTO"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Scrum](../my-app/src/Assets/Marca.png)
 
-## Available Scripts
+Este README proporciona una visión general de cómo se utiliza la metodología Scrum para el desarrollo de proyectos basados en tecnologías JavaScript, React, Firebase, Visual Studio Code, Git, Azure y Cypress. Scrum es un marco de trabajo ágil ampliamente adoptado para gestionar proyectos de software y desarrollo de productos.
 
-In the project directory, you can run:
+## Metodología Scrum
 
-### `npm start`
+![Metodología Scrum](https://inspirate.eclass.com/hubfs/shutterstock_1351633742.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Scrum es una metodología ágil que se centra en la colaboración, la entrega incremental y la adaptación a medida que se desarrolla un producto. Se basa en roles definidos, eventos programados y artefactos para facilitar la transparencia, la inspección y la adaptación en todo el ciclo de desarrollo.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Los principales componentes de Scrum son:
 
-### `npm test`
+### Roles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Roles](https://lh3.googleusercontent.com/Z1VtkwnhtOE61_pgT3kx2xhnvwV6S9rk3W-NVjto0g916fx7yxGQ2MUPDsWFNSZA1l3IGDAoQ4pvbrMn5s7h029bMHqIDIXkA3ylTSPJHGjEEpe6rlelGv-vQVwnd5lDycHlHVxl)
 
-### `npm run build`
+- Scrum Master: Es el facilitador del equipo, encargado de eliminar obstáculos y asegurar que el equipo se adhiera a los principios y prácticas de Scrum.
+- Product Owner: Representa los intereses del cliente y es responsable de mantener el backlog de producto y priorizar las funcionalidades.
+- Equipo de Desarrollo: Son los miembros del equipo responsables de diseñar, desarrollar y probar las funcionalidades del producto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Eventos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Eventos](https://images.squarespace-cdn.com/content/v1/5dde466c8ec727201d3ae12f/1604489456599-DPRHXXNNPPMH974FPJSD/CABSA+%3E+Eventos+Scrum-2.png?format=1000w)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Sprint Planning: Reunión para planificar las tareas del Sprint y determinar qué funcionalidades se implementarán.
+- Daily Scrum: Reunión diaria donde el equipo comparte su progreso, identifica impedimentos y coordina el trabajo.
+- Sprint Review: Reunión para revisar el trabajo completado y obtener retroalimentación del Product Owner.
+- Sprint Retrospective: Reunión para analizar el Sprint pasado y buscar mejoras para el próximo.
 
-### `npm run eject`
+### Artefactos
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Artefactos](https://blog.buhoos.com/wp-content/uploads/2022/04/artefactos-scrum.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Product Backlog: Lista priorizada de todas las funcionalidades que el equipo debe implementar.
+- Sprint Backlog: Lista de tareas seleccionadas para el Sprint actual.
+- Incremento: Conjunto de funcionalidades entregadas y probadas al final de cada Sprint.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tecnologías Utilizadas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Este proyecto utiliza las siguientes tecnologías:
 
-## Learn More
+### JavaScript
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![JavaScript](https://ricardogeek.com/wp-content/uploads/2017/11/js.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Lenguaje de programación ampliamente utilizado para el desarrollo web.
 
-### Code Splitting
+### React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![React](https://www.positive0.com/static/1e8e43f7a9d9d7f4dbf2561ad04c0a0c/4ff95/ReactJS.png)
 
-### Analyzing the Bundle Size
+Framework de JavaScript para construir interfaces de usuario interactivas y reutilizables.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Firebase
 
-### Making a Progressive Web App
+![Firebase](https://cdn.icon-icons.com/icons2/691/PNG/512/google_firebase_icon-icons.com_61474.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Plataforma de desarrollo de aplicaciones en la nube que proporciona una base de datos en tiempo real, autenticación de usuarios y más.
 
-### Advanced Configuration
+### Visual Studio Code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Visual Studio Code](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png)
 
-### Deployment
+Editor de código altamente popular con una amplia gama de extensiones para desarrollo web.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Git y GitHub
 
-### `npm run build` fails to minify
+![Git y GitHub](https://cdn-icons-png.flaticon.com/512/25/25231.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sistema de control de versiones distribuido y plataforma de alojamiento de repositorios para colaboración en equipo.
+
+### Azure
+
+![Azure](https://1000marcas.net/wp-content/uploads/2021/05/Microsoft-Azure-logo-3.png)
+
+Servicio en la nube de Microsoft para implementar, administrar y escalar aplicaciones.
+
+### Cypress
+
+![Cypress](https://asset.brandfetch.io/idIq_kF0rb/idv3zwmSiY.jpeg)
+
+Herramienta de pruebas de interfaz de usuario que permite realizar pruebas end-to-end.
+
+## Contribuciones
+
+¡Las contribuciones son bienvenidas! Si desea contribuir a este proyecto, asegúrese de seguir las mejores prácticas de desarrollo y abrir un pull request.
+
+## Licencia
+
+Este proyecto se distribuye bajo la licencia MIT. Para obtener más detalles, consulte el archivo LICENSE.
+
+## Contacto
+
+Para cualquier pregunta o consulta relacionada con el proyecto, puede ponerse en contacto con el equipo de desarrollo a través de [correo electrónico](alfred.garcia@ucb.edu.bo).
+
+¡Gracias por tu interés en este proyecto! Esperamos que esta información haya sido útil para entender cómo se utiliza Scrum junto con las tecnologías mencionadas para desarrollar proyectos de software. Si tienes alguna otra pregunta o inquietud, no dudes en contactarnos. ¡Buena suerte!
