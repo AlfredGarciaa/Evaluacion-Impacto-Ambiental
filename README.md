@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Metodología Scrum para Desarrollo de Proyectos con Tecnologías JavaScript, React, Firebase, Visual Studio Code, Git, Azure y Cypress
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este README proporciona una visión general de cómo se utiliza la metodología Scrum para el desarrollo de proyectos basados en tecnologías JavaScript, React, Firebase, Visual Studio Code, Git, Azure y Cypress. Scrum es un marco de trabajo ágil ampliamente adoptado para gestionar proyectos de software y desarrollo de productos.
 
-## Available Scripts
+## Metodología Scrum
 
-In the project directory, you can run:
+Scrum es una metodología ágil que se centra en la colaboración, la entrega incremental y la adaptación a medida que se desarrolla un producto. Se basa en roles definidos, eventos programados y artefactos para facilitar la transparencia, la inspección y la adaptación en todo el ciclo de desarrollo.
 
-### `npm start`
+Los principales componentes de Scrum son:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Roles**: 
+  - Scrum Master: Es el facilitador del equipo, encargado de eliminar obstáculos y asegurar que el equipo se adhiera a los principios y prácticas de Scrum.
+  - Product Owner: Representa los intereses del cliente y es responsable de mantener el backlog de producto y priorizar las funcionalidades.
+  - Equipo de Desarrollo: Son los miembros del equipo responsables de diseñar, desarrollar y probar las funcionalidades del producto.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Eventos**:
+  - Sprint Planning: Reunión para planificar las tareas del Sprint y determinar qué funcionalidades se implementarán.
+  - Daily Scrum: Reunión diaria donde el equipo comparte su progreso, identifica impedimentos y coordina el trabajo.
+  - Sprint Review: Reunión para revisar el trabajo completado y obtener retroalimentación del Product Owner.
+  - Sprint Retrospective: Reunión para analizar el Sprint pasado y buscar mejoras para el próximo.
 
-### `npm test`
+- **Artefactos**:
+  - Product Backlog: Lista priorizada de todas las funcionalidades que el equipo debe implementar.
+  - Sprint Backlog: Lista de tareas seleccionadas para el Sprint actual.
+  - Incremento: Conjunto de funcionalidades entregadas y probadas al final de cada Sprint.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologías Utilizadas
 
-### `npm run build`
+Este proyecto utiliza las siguientes tecnologías:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **JavaScript**: Lenguaje de programación ampliamente utilizado para el desarrollo web.
+- **React**: Framework de JavaScript para construir interfaces de usuario interactivas y reutilizables.
+- **Firebase**: Plataforma de desarrollo de aplicaciones en la nube que proporciona una base de datos en tiempo real, autenticación de usuarios y más.
+- **Visual Studio Code**: Editor de código altamente popular con una amplia gama de extensiones para desarrollo web.
+- **Git y GitHub**: Sistema de control de versiones distribuido y plataforma de alojamiento de repositorios para colaboración en equipo.
+- **Azure**: Servicio en la nube de Microsoft para implementar, administrar y escalar aplicaciones.
+- **Cypress**: Herramienta de pruebas de interfaz de usuario que permite realizar pruebas end-to-end.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contribuciones
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+¡Las contribuciones son bienvenidas! Si desea contribuir a este proyecto, asegúrese de seguir las mejores prácticas de desarrollo y abrir un pull request.
 
-### `npm run eject`
+## Licencia
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Este proyecto se distribuye bajo la licencia MIT. Para obtener más detalles, consulte el archivo LICENSE.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contacto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para cualquier pregunta o consulta relacionada con el proyecto, puede ponerse en contacto con el equipo de desarrollo a través de [correo electrónico](correo@example.com).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Gracias por tu interés en este proyecto! Esperamos que esta información haya sido útil para entender cómo se utiliza Scrum junto con las tecnologías mencionadas para desarrollar proyectos de software. Si tienes alguna otra pregunta o inquietud, no dudes en contactarnos. ¡Buena suerte!
