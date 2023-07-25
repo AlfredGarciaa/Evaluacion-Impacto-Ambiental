@@ -6,58 +6,55 @@
 
 .body1 {
     height: 100vh;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
     background-color: #000;
-}
-
-.main1 {
-    width: 100%;
+    padding-left: 20px; /* Ajusta el margen izquierdo según tu preferencia */
+  }
+  
+  .main1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px; /* Ajusta el espacio entre los iconos según tu preferencia */
+    border-radius: 50%;
+    background-color: #333333; /* Ajusta el color de fondo de los iconos según tu preferencia */
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;    
-}
-
-.icon {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin: 20px;
-    border-radius: 50%;
-    transition: all .8s;
     cursor: pointer;
-}
-
-.icon:hover {
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+  
+  .icon:hover {
     background-color: #8f8484;
-    box-shadow:  0 0 20px #8f8484 ;
-}
-
-.icon:hover:nth-child(2) {
-    background-color: #3b5998 ;
-    box-shadow:  0 0 20px #3b5998 ;
-}
-
-.icon:hover:nth-child(3) {
+    box-shadow: 0 0 20px #8f8484;
+    transform: scale(1.1); /* Hace que el icono aumente de tamaño al seleccionarlo */
+  }
+  
+  .icon:nth-child(2) {
+    background-color: #3b5998;
+  }
+  
+  .icon:nth-child(3) {
     background-color: #25D366;
-    box-shadow: 0 0 20px #25D366 ;
-}
-
-.icon:hover:nth-child(4) {
-    background-color: #c4302b ;
-    box-shadow:  0 0 20px #c4302b  ;
-}
-
-.icon i {
+  }
+  
+  .icon:nth-child(4) {
+    background-color: #c4302b;
+  }
+  
+  .icon i {
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     font-size: 1.7rem;
-}
+  }
 
 svg circle {
     stroke-dasharray: 150;
