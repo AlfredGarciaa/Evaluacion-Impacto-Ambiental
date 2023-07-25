@@ -1,31 +1,43 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-body {
-	background: #EDE9E7;
-	font-family: 'Poppins', sans-serif;
-}
-
-main {
-	max-width: 1000px;
-	margin: 0px auto;
-	overflow: hidden;
-}
-
-/* BARRA DE BOTONES */
-
-.button-bar {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	top: 25%;
-	left: 20px;
-	transform: translateY(-50%);
+.image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
 }
   
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+}
+  
+.image-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 15%;
+}
+  
+  
+.button-bar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+    
 .button-bar a {
 	display: block;
 	position: relative;

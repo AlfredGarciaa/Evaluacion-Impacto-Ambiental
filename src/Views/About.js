@@ -2,20 +2,10 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import image from '../Assets/Marca.png';
 import '../Styles/About.css';
-import { Slide, TextoSlide } from '../Components/HomeHeader.jsx';
+import '../Styles/Icons.css';
 
 const About = () => {
   const location = useLocation();
-
-  const slides = [
-    {
-      image: image,
-      text: 'La tierra proporciona lo suficiente para satisfacer las necesidades de cada hombre, pero no la codicia de cada hombre.',
-      author: 'Mahatma Gandhi',
-      backgroundColor: 'black',
-      textColor: '#fff',
-    },
-  ];
 
   const routes = [
     { path: '/home', label: 'Home', icon: <i className="fas fa-home button-icon"></i> },
@@ -27,22 +17,14 @@ const About = () => {
   return (
     <div>
 
-      <main>
-        {slides.map((slide, index) => (
-          <Slide key={index}>
-            <a href={slide.link}>
-              <img src={slide.image} alt="" />
-            </a>
-            <TextoSlide colorFondo={slide.backgroundColor} colorTexto={slide.textColor}>
-              <p>
-                <strong>{slide.text}</strong>
-                <br />
-                - {slide.author}
-              </p>
-            </TextoSlide>
-          </Slide>
-        ))}
-      </main>
+      <div className="image-container">
+        <img src={image} alt="Marca" className="logo" />
+        <div className="image-text">
+          <strong>" La tierra proporciona lo suficiente para satisfacer las necesidades de cada hombre, pero no la codicia de cada hombre. "</strong>
+          <br />
+          - Mahatma Gandhi
+        </div>
+      </div>  
 
       <div className="button-bar">
         {routes.map((route, index) => {
@@ -63,7 +45,15 @@ const About = () => {
           );
         })}
       </div>
-      
+
+      <div className="body1">
+        <div className="main1">
+          <h1>
+            Hola
+          </h1>
+        </div>
+      </div>
+
     </div>
   );
 };
