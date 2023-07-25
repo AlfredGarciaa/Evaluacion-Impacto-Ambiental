@@ -31,23 +31,23 @@
 }
 
 .icon:hover {
-    background-color: #e60073;
-    box-shadow:  0 0 20px #e60073 ;
+    background-color: #8f8484;
+    box-shadow:  0 0 20px #8f8484 ;
 }
 
 .icon:hover:nth-child(2) {
-    background-color: #1877f2;
-    box-shadow:  0 0 20px #1877f2;
+    background-color: #3b5998 ;
+    box-shadow:  0 0 20px #3b5998 ;
 }
 
 .icon:hover:nth-child(3) {
-    background-color: #25d366;
-    box-shadow: 0 0 20px #25d366 ;
+    background-color: #25D366;
+    box-shadow: 0 0 20px #25D366 ;
 }
 
 .icon:hover:nth-child(4) {
-    background-color: #1da1f2;
-    box-shadow:  0 0 20px #1da1f2 ;
+    background-color: #c4302b ;
+    box-shadow:  0 0 20px #c4302b  ;
 }
 
 .icon i {

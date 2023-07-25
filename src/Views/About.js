@@ -48,12 +48,35 @@ const About = () => {
 
       <div className="body1">
         <div className="main1">
-          <h1>
-            Hola
-          </h1>
+          <div className="icon">
+            <svg height="80" width="80">
+              <circle cx="40" cy="40" r="35" stroke="white" strokeWidth="4" fill="none"></circle>
+            </svg>
+            <i className="bx bxl-github"></i>
+          </div>
+
+          <div className="icon">
+            <svg height="80" width="80">
+              <circle cx="40" cy="40" r="35" stroke="white" strokeWidth="4" fill="none"></circle>
+            </svg>
+            <i className="bx bxl-facebook-circle"></i>
+          </div>
+
+          <div className="icon">
+            <svg height="80" width="80">
+              <circle cx="40" cy="40" r="35" stroke="white" strokeWidth="4" fill="none"></circle>
+            </svg>
+            <i className="bx bxl-whatsapp"></i>
+          </div>
+
+          <div className="icon">
+            <svg height="80" width="80">
+              <circle cx="40" cy="40" r="35" stroke="white" strokeWidth="4" fill="none"></circle>
+            </svg>
+            <i className="bx bxl-youtube"></i>
+          </div>
         </div>
       </div>
-
     </div>
   );
 };
