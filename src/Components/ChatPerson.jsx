@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/ChatPerson.css'; 
+import img from '../Assets/avatar2_.png';
 
 const ChatPerson = () => {
   const [messages, setMessages] = useState([]);
@@ -22,11 +23,12 @@ const ChatPerson = () => {
       <div className="chat-box">
         {messages.map((message, index) => (
           <div key={index} className="message">
-            <img src={`avatar_${index + 1}.png`} alt={`Avatar ${index + 1}`} className="avatar" />
+            <img src={img} alt={`Avatar ${index + 1}`} className="avatar" />
             <span>{message}</span>
           </div>
         ))}
       </div>
+
       <form className="chat-form" onSubmit={handleSubmit}>
         <input
           type="text"

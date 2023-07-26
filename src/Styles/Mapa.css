@@ -1,0 +1,11 @@
+.mapa-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -12px;
+}
+
+.color-text-mapa {
+  color: brown;
+  font-style: italic;
+}
