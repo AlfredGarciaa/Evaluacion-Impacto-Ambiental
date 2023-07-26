@@ -9,6 +9,8 @@ import image4 from '../Assets/Home 4.png';
 import Calendar from 'react-calendar';
 import Language from '../Components/Language.jsx';
 import crearMatrizLeopold from './Matriz.js';
+import Perfil from '../Components/Perfil.jsx';
+import '../Styles/Perfil.css';
 
 const Home = () => {
   const slides = [
@@ -48,9 +50,6 @@ const Home = () => {
     { path: '/context', label: 'Context', icon: <i class="fas fa-book"></i> },
     { path: '/about', label: 'About', icon: <i class="fas fa-users"></i> },
   ];
-
-  const mapCenter = [51.505, -0.09];
-  const mapZoom = 13;
 
   return (
     <div>
@@ -94,6 +93,10 @@ const Home = () => {
 
       <div>
         <crearMatrizLeopold />
+      </div>
+
+      <div className="container-top-right">
+        <Perfil />
       </div>
 
     </div>

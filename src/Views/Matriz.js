@@ -1,6 +1,6 @@
 // Función para crear y mostrar una matriz de Leopold
-function crearMatrizLeopold() {
-    const matrizLeopold = [
+const crearMatrizLeopold = () => {
+  const matrizLeopold = [
       ['Factor 1', 'Factor 2', 'Factor 3', 'Factor 4'],
       ['Elemento 1', 'Elemento 2', 'Elemento 3', 'Elemento 4'],
       ['Elemento 5', 'Elemento 6', 'Elemento 7', 'Elemento 8'],
@@ -28,6 +28,8 @@ function crearMatrizLeopold() {
   
     // Mostrar la tabla en la página
     document.body.appendChild(tabla);
+
+    return matrizLeopold;
   }
   
   // Llamar a la función para mostrar la matriz de Leopold
