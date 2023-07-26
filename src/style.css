@@ -1,3 +1,5 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
 #myCanvas{
     border: 5px solid black;
     position: absolute;

@@ -4,11 +4,14 @@ import spriteSheetImg from './sprite sheet.png';
 import katImg from './Kat.png';
 
 const SpriteAnimations = () => {
-  const canvasRef = useRef(null);
   const [animation, setAnimation] = useState('run');
+  const canvasRef = useRef(null);
+  const canvasMapRef = useRef(new Map());
+  const animationRef = useRef(null); // Referencia a la solicitud de animación actual
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return; // Salir si el canvas no está disponible
     const ctx = canvas.getContext('2d');
     const spriteWidth = 1038;
     const spriteHeight = 833;
@@ -55,21 +58,49 @@ const SpriteAnimations = () => {
         gameFrame++; 
       }
       stagger++;
-      requestAnimationFrame(animate);
+      animationRef.current = requestAnimationFrame(animate);
     }
 
     myImg.onload = () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
       animate();
     };
   }, [animation]);
 
+  useEffect(() => {
+    // Función para crear un nuevo canvas para la animación seleccionada
+    const createNewCanvas = () => {
+      const newCanvas = document.createElement('canvas');
+      newCanvas.width = 1038;
+      newCanvas.height = 833;
+      canvasMapRef.current.set(animation, newCanvas);
+    };
+
+    // Función para obtener el canvas correspondiente a la animación seleccionada
+    const getCanvas = () => {
+      if (!canvasMapRef.current.has(animation)) {
+        createNewCanvas();
+      }
+      return canvasMapRef.current.get(animation);
+    };
+
+    // Limpiar canvas al cambiar la animación
+    const canvas = getCanvas();
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }, [animation]);
+
   return (
     <div className="sprite-container">
-      <canvas ref={canvasRef} id="myCanvas"></canvas>
+      <canvas ref={canvasRef} />
       <div className="control">
         <img src={katImg} alt="Kat character" className="kat-image" />
         <div>
-          <label htmlFor="animations">I can</label>
+          <label htmlFor="animations">
+            <u>I can: </u> <i className="fa fa-masks-theater"></i>
+        </label>
           <select
             name="animations"
             id="animations"
