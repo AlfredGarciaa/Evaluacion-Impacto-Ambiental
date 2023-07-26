@@ -1,15 +1,14 @@
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
-/* style.css */
 .App {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra el contenido verticalmente */
+  align-items: center;
 }
 
 .sprite-container {
   position: relative;
-  margin-left: 20px; /* Ajusta este valor para mover el lienzo hacia la izquierda */
+  margin-left: 20px; 
 }
 
 canvas {
@@ -21,9 +20,9 @@ canvas {
 .control {
   position: absolute;
   top: 10px;
-  left: 20px; /* Ajusta este valor para mover el control hacia la izquierda */
+  left: 20px; 
   display: flex;
-  align-items: center; /* Centra el contenido verticalmente en el control */
+  align-items: center;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 5px;

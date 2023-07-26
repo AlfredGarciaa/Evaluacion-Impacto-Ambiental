@@ -5,7 +5,6 @@ import '../Styles/Mapa.css';
 import L from 'leaflet'; 
 import customIcon from '../Assets/customIcon.png'; 
 
-
 const Mapa = () => {
   const buenosAiresCoords = [-34.6132, -58.3772];
   const [currentLocation, setCurrentLocation] = useState(null);
