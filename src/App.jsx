@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useState, useEffect } from 'react';
 import './Styles/App.css';
 import Spinner from './Components/Spinner.jsx';
@@ -13,7 +12,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 8000);
   }, []);
 
   return (

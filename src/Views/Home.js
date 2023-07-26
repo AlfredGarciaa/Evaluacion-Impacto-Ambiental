@@ -8,9 +8,10 @@ import image3 from '../Assets/Home 3.png';
 import image4 from '../Assets/Home 4.png';
 import Calendar from 'react-calendar';
 import Language from '../Components/Language.jsx';
-import crearMatrizLeopold from './Matriz.js';
 import Perfil from '../Components/Perfil.jsx';
 import '../Styles/Perfil.css';
+import '../Styles/Mapa.css';
+import Mapa from '../Components/Mapa.jsx';
 
 const Home = () => {
   const slides = [
@@ -91,8 +92,10 @@ const Home = () => {
           <Language />
       </div>
 
-      <div>
-        <crearMatrizLeopold />
+      <div className="mapa-container">
+        <div>
+          <Mapa />
+        </div>
       </div>
 
       <div className="container-top-right">
