@@ -94,26 +94,22 @@ const SpriteAnimations = () => {
 
   return (
     <div className="sprite-container">
-      <canvas ref={canvasRef} />
       <div className="control">
-        <img src={katImg} alt="Kat character" className="kat-image" />
-        <div>
-          <label htmlFor="animations">
-            <u>I can: </u> <i className="fa fa-masks-theater"></i>
-        </label>
-          <select
-            name="animations"
-            id="animations"
-            value={animation}
-            onChange={(e) => setAnimation(e.target.value)}
-          >
-            <option value="run">Run</option>
-            <option value="attack">Attack</option>
-            <option value="jump">Jump</option>
-            <option value="dash">Dash</option>
-          </select>
-        </div>
+        <u>I can: </u>
+        <i className="fa fa-masks-theater"></i> {/* Asegúrate de que la clase 'fa' y 'fa-masks-theater' se estén importando correctamente */}
+        <select
+          name="animations"
+          id="animations"
+          value={animation}
+          onChange={(e) => setAnimation(e.target.value)}
+        >
+          <option value="run">Run</option>
+          <option value="attack">Attack</option>
+          <option value="jump">Jump</option>
+          <option value="dash">Dash</option>
+        </select>
       </div>
+      <canvas ref={canvasRef} width={519} height={417} />
     </div>
   );
 };

@@ -1,3 +1,4 @@
+// App.jsx
 import React, { useState, useEffect } from 'react';
 import './Styles/App.css';
 import Spinner from './Components/Spinner.jsx';
@@ -23,8 +24,10 @@ function App() {
 
       {!isLoading ? (
         <>
+          <Link to="/home" className="go-to-home-button">
+            Go to Home
+          </Link>
           <SpriteAnimations />
-          <Link to="/home">Go to Home</Link>
         </>
       ) : (
         <p className="open-source-text">Open Source</p>
