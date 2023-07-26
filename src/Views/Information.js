@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import ReactPlayer from 'react-player/youtube';
 import '../Styles/About.css';
 import '../Styles/Videos.css';
+import ChatPerson from '../Components/ChatPerson.jsx';
 
 const Information = () => {
   const location = useLocation();
@@ -43,6 +44,10 @@ const Information = () => {
             </React.Fragment>
           );
         })}
+      </div>
+
+      <div>
+        <ChatPerson />
       </div>
 
     </div>
