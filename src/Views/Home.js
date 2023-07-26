@@ -12,6 +12,7 @@ import Perfil from '../Components/Perfil.jsx';
 import '../Styles/Perfil.css';
 import '../Styles/Mapa.css';
 import Mapa from '../Components/Mapa.jsx';
+import MatrizLeopold from '../Components/MatrizLeopold.js';
 
 const Home = () => {
   const slides = [
@@ -100,6 +101,13 @@ const Home = () => {
 
       <div className="container-top-right">
         <Perfil />
+      </div>
+
+      <div>
+        <h>
+          " Matriz de Leopold "
+        </h>
+        <MatrizLeopold />
       </div>
 
     </div>
