@@ -7,9 +7,10 @@ import image2 from '../Assets/Home 2.png';
 import image3 from '../Assets/Home 3.png';
 import image4 from '../Assets/Home 4.png';
 import Calendar from 'react-calendar';
-import { MapContainer, TileLayer } from 'react-leaflet';
-import '../Styles/leaflet.css';
 import Language from '../Components/Language.jsx';
+import crearMatrizLeopold from './Matriz.js';
+import Perfil from '../Components/Perfil.jsx';
+import '../Styles/Perfil.css';
 
 const Home = () => {
   const slides = [
@@ -50,9 +51,6 @@ const Home = () => {
     { path: '/about', label: 'About', icon: <i class="fas fa-users"></i> },
   ];
 
-  const mapCenter = [51.505, -0.09];
-  const mapZoom = 13;
-
   return (
     <div>
 
@@ -89,16 +87,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="map-container">
-        <MapContainer center={mapCenter} zoom={mapZoom} className="leaflet-map">
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-        </MapContainer>
-      </div>
-
       <div className="home-container">
           <Language />
+      </div>
+
+      <div>
+        <crearMatrizLeopold />
+      </div>
+
+      <div className="container-top-right">
+        <Perfil />
       </div>
 
     </div>
