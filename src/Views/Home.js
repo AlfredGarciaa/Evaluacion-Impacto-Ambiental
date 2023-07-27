@@ -13,6 +13,7 @@ import '../Styles/Perfil.css';
 import '../Styles/Mapa.css';
 import Mapa from '../Components/Mapa.jsx';
 import MatrizLeopold from '../Components/MatrizLeopold.js';
+import '../Styles/MatrizLeopold.css';
 
 const Home = () => {
   const slides = [
@@ -104,8 +105,8 @@ const Home = () => {
       </div>
 
       <div>
-        <h>
-          " Matriz de Leopold "
+        <h className="matriz">
+          * Matriz de Leopold *
         </h>
         <MatrizLeopold />
       </div>
