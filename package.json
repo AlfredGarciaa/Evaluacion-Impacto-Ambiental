@@ -13,12 +13,14 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/googlemaps": "^3.43.3",
     "@types/react": "^18.2.17",
+    "firebase": "^10.1.0",
     "font-awesome-icons": "^1.6.0",
     "i18next": "^23.2.11",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-calendar": "^4.5.0",
     "react-dom": "^18.2.0",
+    "react-file-reader": "^1.1.4",
     "react-fontawesome": "^1.7.1",
     "react-i18next": "^13.0.2",
     "react-leaflet": "^4.2.1",
@@ -27,7 +29,8 @@
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
     "styled-components": "^6.0.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "react-scripts start",
