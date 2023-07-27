@@ -30,9 +30,9 @@ const Perfil = () => {
     return (
       <div className="App">
         <div className='menu-container' ref={menuRef}>
-          <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
-            <img src={user} alt="Imagen de usuario"></img>
-          </div>
+        <button className="menu-trigger" onClick={() => setOpen(!open)}>
+          <img src={user} alt="Imagen de usuario" />
+        </button>
   
           <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
             <h3>Web Visitor<br/><span>user.password@gmail.com</span></h3>

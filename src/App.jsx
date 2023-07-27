@@ -7,21 +7,6 @@ import { Link } from 'react-router-dom';
 import SpriteAnimations from './game.jsx';
 
 /* FIREBASE */
-import { initializeApp } from "firebase/app";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyCXRWDWpFsdlHQS2RH_sPgyAGAX-pJ8O1s",
-  authDomain: "impacto-ambiental-168c9.firebaseapp.com",
-  databaseURL: "https://impacto-ambiental-168c9-default-rtdb.firebaseio.com",
-  projectId: "impacto-ambiental-168c9",
-  storageBucket: "impacto-ambiental-168c9.appspot.com",
-  messagingSenderId: "364671145286",
-  appId: "1:364671145286:web:6b0f818cd257bc4c364147",
-  measurementId: "G-S38VGN71EB"
-};
-
-const app = initializeApp(firebaseConfig);
-/* FIREBASE */
 
 function App() {
   const [isLoading, setLoading] = useState(true);
