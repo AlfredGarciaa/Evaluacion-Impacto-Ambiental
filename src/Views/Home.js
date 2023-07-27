@@ -14,6 +14,8 @@ import '../Styles/Mapa.css';
 import Mapa from '../Components/Mapa.jsx';
 import MatrizLeopold from '../Components/MatrizLeopold.js';
 import '../Styles/MatrizLeopold.css';
+import '../Styles/Descargar.css';
+import Descargar from '../Components/descargar.jsx';
 
 const Home = () => {
   const slides = [
@@ -94,9 +96,15 @@ const Home = () => {
           <Language />
       </div>
 
-      <div className="mapa-container">
-        <div>
-          <Mapa />
+      <div className="mapa-descargar-container">
+        <div className="mapa-container">
+          <div>
+            <Mapa />
+          </div>
+        </div>
+
+        <div className="descargar-container">
+          <Descargar />
         </div>
       </div>
 

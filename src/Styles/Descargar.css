@@ -1,0 +1,31 @@
+.mapa-descargar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descargar-container {
+    margin-right: -500px;
+    margin-left: -70px;
+    margin-top: -150px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #5DBB63; 
+    background-color: #75D695; 
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 100px;
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.2), 
+      0 0 0 8px #75D695, 
+      0 0 0 12px #5DBB63; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.descargar-container:hover {
+    background-color: #9CE2A3; 
+    transform: scale(1.05);
+}
