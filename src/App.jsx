@@ -8,7 +8,6 @@ import SpriteAnimations from './game.jsx';
 
 /* FIREBASE */
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCXRWDWpFsdlHQS2RH_sPgyAGAX-pJ8O1s",
@@ -22,7 +21,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 /* FIREBASE */
 
 function App() {

@@ -31,7 +31,7 @@ const Perfil = () => {
       <div className="App">
         <div className='menu-container' ref={menuRef}>
           <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
-            <img src={user}></img>
+            <img src={user} alt="Imagen de usuario"></img>
           </div>
   
           <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
