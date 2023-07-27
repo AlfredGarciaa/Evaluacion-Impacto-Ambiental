@@ -10,13 +10,18 @@ const Mapa = () => {
   const [currentLocation, setCurrentLocation] = useState(null);
   const mapRef = useRef();
 
-  const handleGetLocationClick = () => {
+  const customMarkerIcon = new L.Icon({
+    iconUrl: customIcon,
+    iconSize: [60, 60], 
+    iconAnchor: [16, 32], 
+  });
+
+  const getLocation = () => {
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
           setCurrentLocation([latitude, longitude]);
-
           mapRef.current.setView([latitude, longitude], 13);
         },
         (error) => {
@@ -28,24 +33,15 @@ const Mapa = () => {
     }
   };
 
-    const customMarkerIcon = new L.Icon({
-        iconUrl: customIcon,
-        iconSize: [60, 60], 
-        iconAnchor: [16, 32], 
-    });
-
   return (
     <div className="mapa-container">
-
       <h1 className="color-text-mapa">
         <i className="fa-solid fa-map"></i>
         Mapa
       </h1>
       <div style={{ height: '200px', width: '500px' }}>
         <MapContainer ref={mapRef} center={currentLocation || buenosAiresCoords} zoom={11} style={{ height: '100%', width: '100%' }}>
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           {currentLocation && (
             <Marker position={currentLocation} icon={customMarkerIcon}> 
               <Popup>
@@ -53,20 +49,18 @@ const Mapa = () => {
               </Popup>
             </Marker>
           )}
-
-            <Marker position={buenosAiresCoords} icon={customMarkerIcon}>
-                <Popup>
-                    Buenos Aires, Argentina!
-                </Popup>
-            </Marker>
+          <Marker position={buenosAiresCoords} icon={customMarkerIcon}>
+            <Popup>
+              Buenos Aires, Argentina!
+            </Popup>
+          </Marker>
         </MapContainer>
       </div>
       <div className="button-container">
-        <button onClick={handleGetLocationClick} className="pulse-button">
-            Ubicacion Actual
+        <button onClick={getLocation} className="pulse-button">
+          Ubicacion Actual
         </button>
       </div>
-
     </div>
   );
 };

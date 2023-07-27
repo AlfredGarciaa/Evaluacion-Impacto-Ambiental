@@ -105,9 +105,10 @@ const Home = () => {
       </div>
 
       <div>
-        <h className="matriz">
-          * Matriz de Leopold *
-        </h>
+        <h1 className="matriz">
+        <i class="fa-solid fa-database"></i>
+            * Matriz de Leopold *
+        </h1>
         <MatrizLeopold />
       </div>
 
